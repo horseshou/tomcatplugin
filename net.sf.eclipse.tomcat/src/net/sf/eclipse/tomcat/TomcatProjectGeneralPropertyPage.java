@@ -310,7 +310,8 @@ public class TomcatProjectGeneralPropertyPage implements TomcatPluginResources {
                 prj.setReloadable(reloadableCheck.getSelection());
                 prj.setRedirectLogger(redirectLoggerCheck.getSelection());
                 prj.setExtraInfo(extraInfoText.getText());
-                prj.setRootDir(getRootDir());
+                //prj.setRootDir(getRootDir());
+		prj.setRootDir(this.rootDirText.getText());
                 prj.setWorkDir(getWorkDir());
                 prj.saveProperties();
             } else {
